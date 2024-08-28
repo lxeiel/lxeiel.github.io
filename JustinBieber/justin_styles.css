@@ -1,0 +1,124 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #444;
+}
+
+header {
+    background-color: #ffb3ba; /* Soft Pink */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #ffb3ba, #ffdfba, #ffffba, #bae1ff, #baffc9);
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #000;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px #000;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-left: 10px solid #ffb3ba;
+}
+
+.bio p {
+    line-height: 1.8;
+    font-size: 20px;
+    color: #555;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    background-color: #ffdfba; /* Light Peach */
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #ff5e57; /* Bright Red */
+}
+
+.milestones ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.milestones ul li {
+    margin: 10px 0;
+    background-color: #bae1ff; /* Soft Blue */
+    padding: 10px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.video-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #ffffba; /* Light Yellow */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ffb3ba; /* Soft Pink */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #000;
+    border-top: 5px solid #ff5e57; /* Bright Red */
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
