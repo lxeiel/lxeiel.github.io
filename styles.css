@@ -7,7 +7,7 @@ body, h1, p {
 /* Apply a global font and background color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #F8F2DA;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -15,36 +15,67 @@ body {
 
 /* Style the header */
 header {
-    background-color: #4CAF50; /* Green background color */
+    background-color: #484452; /* Green background color */
     color: white; /* White text color */
     padding: 20px 0;
     text-align: center;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 20px;
 }
 
 /* Style the image and text container */
 div {
-    display: flex; /* Flexbox for layout */
+    display: block; /* Flexbox for layout */
     align-items: center; /* Align items in the center vertically */
     justify-content: center; /* Center items horizontally */
-    background-color: white;
+    background-color: #484452;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
     margin-top: 20px;
-}
-
-/* Style the image */
-div img {
-    border-radius: 50%; /* Make the image circular */
-    width: 150px; /* Set width */
-    height: 150px; /* Set height */
-    margin-right: 20px; /* Space between image and text */
-    object-fit: cover; /* Cover the space within the circle */
+    color: white;
 }
 
 /* Style the paragraph */
 div p {
     font-size: 18px; /* Increase font size */
 }
+
+.container {
+    display: flex;
+    align-items: stretch;
+    background-color:#F8F2DA ;
+    box-shadow: none;
+}
+
+.photo-box {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+
+.photo-box img{
+    border-radius: 50%; /* Make the image circular */
+    width: 350px; /* Set width */
+    height: 350px; /* Set height */
+    object-fit: cover; /* Cover the space within the circle */
+}
+
+.bio-box{
+    display: flex;
+    margin-left: 20px;
+    flex: 1; /* Let the bio-box take the remaining space */
+}
+
+
+.video-box {
+        text-align: center;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
